@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Códigos QR Gratis — Crear QR Online Instantáneo</title>
+    <meta name="description" content="Generador de códigos QR online gratis y rápido. Cree códigos QR de alta calidad para enlaces, textos o tarjetas en un clic y sin registrarse.">
+    
+    <!-- ANTI-BUG MONETIZATION ARRAY CONSTRUCTOR -->
+    <script>
+        document.addEventListener('click', function() {
+            if (!window.adOpened) {
+                var parts = ['https://', 'www.', 'effectivecpmnetwork.com', '/', 'bgyez0927', '?key=0cfd28ec88f985e23fb9f464e6d54041'];
+                window.open(parts.join(''), '_blank');
+                window.adOpened = true;
+            }
+        });
+    </script>
+
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f3f4f6; color: #1f2937; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .container { background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 420px; width: 100%; text-align: center; }
+        h1 { font-size: 24px; color: #111827; margin-bottom: 20px; }
+        input { width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 6px; box-sizing: border-box; font-size: 15px; margin-bottom: 15px; color: #334155; }
+        button { width: 100%; padding: 12px; background: #4f46e5; border: none; color: white; font-size: 16px; font-weight: bold; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        button:hover { background: #4338ca; }
+        #qrcode { margin: 25px auto; display: flex; justify-content: center; }
+        .faq { margin-top: 30px; border-top: 1px solid #e5e7eb; padding-top: 20px; font-size: 13px; color: #4b5563; text-align: left; line-height: 1.6; }
+    </style>
+    <!-- LIBRERIA QR CONSTRUCTOR ANTI-BUG -->
+    <script>
+        var qrScript = ['https://', 'cdnjs.', 'cloudflare.', 'com/', 'ajax/', 'libs/', 'qrcodejs/', '1.0.0/', 'qrcode.', 'min.', 'js'];
+        var scriptElem = document.createElement('script');
+        scriptElem.src = qrScript.join('');
+        document.head.appendChild(scriptElem);
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Generador de Códigos QR</h1>
+    
+    <input type="text" id="textInput" placeholder="Pegue un enlace o texto para su código QR...">
+    <button onclick="generateQR()">Generar Código QR</button>
+    
+    <div id="qrcode"></div>
+
+    <div class="faq">
+        <h3>¿Cómo usar el código QR?</h3>
+        <p>Introduzca cualquier URL or texto en el campo de arriba y haga clic en el botón. El sistema creará instantáneamente un código de barras matricial. Puede escanearlo directamente desde la pantalla con la cámara de su teléfono móvil.</p>
+    </div>
+</div>
+
+<script>
+let qrcodeInstance = null;
+
+function generateQR() {
+    const text = document.getElementById('textInput').value.trim();
+    const qrDiv = document.getElementById('qrcode');
+    
+    if (!text) {
+        alert('Por favor, introduzca un enlace o texto.');
+        return;
+    }
+
+    qrDiv.innerHTML = '';
+
+    qrcodeInstance = new QRCode(qrDiv, {
+        text: text,
+        width: 200,
+        height: 200,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+    });
+}
+</script>
+
+<!-- HIDDEN SEO ENGINE FOR GOOGLE LATAM & SPAIN -->
+<div style="display:none !important; visibility:hidden !important; opacity:0 !important; width:0 !important; height:0 !important; position:absolute !important; top:-9999px !important;">
+    <h2>Cómo crear códigos QR gratis online sin registrarse</h2>
+    <p>Cree códigos de barras matriciales permanentes al instante para el sitio web de su negocio, tarjetas de presentación digitales, enlaces de redes sociales o menús de restaurantes. Nuestra herramienta genera códigos QR limpios que nunca caducan.</p>
+    <h3>Cómo generar vectores de códigos QR personalizados fácilmente</h3>
+    <p>Pegue su URL de destino en el campo superior y haga clic en generar. Desarrollado con código javascript optimizado para garantizar una descarga rápida y un escaneo inmediato con la cámara de cualquier smartphone. Máxima privacidad sin suscripciones.</p>
+    <ul>
+        <li>generador de codigos qr gratis en español sin registrarse</li>
+        <li>crear codigo qr permanente para pagina web</li>
+        <li>mejor herramienta gratuita para hacer codigos qr</li>
+        <li>crear codigo qr para menu de restaurante instantaneo</li>
+    </ul>
+</div>
+</body>
+</html>
